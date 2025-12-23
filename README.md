@@ -41,3 +41,4 @@ Once live, you can update your site anytime:
 - **Styling:** Tailwind CSS
 - **Icons:** Lucide React
 - **Deployment:** GitHub Actions
+
