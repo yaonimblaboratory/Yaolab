@@ -10,7 +10,7 @@ export const Publications: React.FC = () => {
   const groupedPubs = useMemo(() => {
     const filtered = publications.filter(pub => 
       pub.title.toLowerCase().includes(filter.toLowerCase()) ||
-      pub.authors.some(a => a.toLowerCase().includes(filter.toLowerCase()) ||
+      pub.authors.some(a => a.toLowerCase().includes(filter.toLowerCase())) ||
       pub.venue.toLowerCase().includes(filter.toLowerCase())
     );
 
@@ -26,7 +26,7 @@ export const Publications: React.FC = () => {
       .map(year => ({ 
         year, 
         // Reverse the order so items at the bottom of the list in content.ts appear first
-        pubs: groups[year].reverse() 
+        pubs: [...groups[year]].reverse() 
       }));
   }, [filter]);
 
@@ -64,7 +64,6 @@ export const Publications: React.FC = () => {
                 <div className="space-y-8">
                   {pubs.map(pub => (
                     <div key={pub.id} className="flex flex-col sm:flex-row gap-6">
-                      {/* Optional Thumbnail could go here */}
                       <div className="flex-grow">
                         <h3 className="text-lg font-bold text-neutral-900 mb-2 leading-tight">
                           {pub.links && pub.links.length > 0 ? (
