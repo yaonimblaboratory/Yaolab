@@ -1,0 +1,12 @@
+
+This is the 'public' folder.
+
+1. Save your images (e.g., my-photo.jpg) and videos inside this folder.
+2. In 'lib/content.ts', refer to them simply by their filename.
+
+Example in lib/content.ts:
+  image: "my-photo.jpg"
+
+Do not use "public/my-photo.jpg" or "/my-photo.jpg" in the code if possible, 
+though the MediaDisplay component handles those cases too. 
+Just "my-photo.jpg" is safest.
