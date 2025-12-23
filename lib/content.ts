@@ -39,7 +39,7 @@ export const siteConfig: SiteConfig = {
   footer: {
     email: "yxyao@ust.hk",
     phone: "+852 2358 8367",
-    address: "Chung Yu Tung Building, Rm 3007E, HKUST, Hong Kong",
+    address: "Cheng Yu Tung Building, Rm 3007E, HKUST, Hong Kong",
     socials: [
       { platform: "Twitter", url: "https://x.com/yuxing_yao" },
       { platform: "Google Scholar", url: "https://scholar.google.com/citations?user=VFpWupoAAAAJ&hl=en#" }
@@ -167,7 +167,7 @@ export const people: Person[] = [
   },
   {
     id: "p302",
-    name: "Zhaobo Lv",
+    name: "Zhaobo Lyu",
     role: "MPhil Student",
     bio: "Hi, I’m Zhaobo, an MPhil student working on non-invasive manipulation of soft matters. I enjoy using sound waves to shape soft matter, build functional structures, and explore how physics, materials science, and biology can meet in unexpected—and sometimes noisy—ways.",
     image: "Zhaobo.jpg",
