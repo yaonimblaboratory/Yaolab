@@ -13,7 +13,7 @@ export const People: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-extrabold text-neutral-900 mb-4">Our Team</h1>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
-            A diverse group of researchers passionate about synthetic biology.
+            A diverse group of researchers passionate about smart materials, ultrasound technology and synthetic biology.
           </p>
         </div>
 
